@@ -11,7 +11,7 @@ def call(body) {
     	checkout scm
     }
 
-    stage ("Tesing") {
-    	echo "hoge"
+    stage ("Testing") {
+    	echo APP_NAME
     }
 }
