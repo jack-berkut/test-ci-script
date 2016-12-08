@@ -1,7 +1,7 @@
 #!/bin/env groovy
 
-// def hoge(name) {
-// 	stage (name) {
-// 		echo "ainai"
-// 	}
-// }
+def call(name) {
+	stage (name) {
+		echo "hoge"
+	}
+}
