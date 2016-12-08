@@ -1,7 +1,7 @@
 #!/bin/env groovy
 
-def call(name) {
-	stage (name) {
-		echo "hoge"
-	}
+def call(body) {
+	def config = [:]
+
+	println config
 }
