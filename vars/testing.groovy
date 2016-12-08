@@ -7,6 +7,7 @@ def call(body) {
     body.delegate = config
     body()
 
+    echo env.HOGE
     stage ("Checkout Code") {
     	checkout scm
     }
