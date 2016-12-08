@@ -7,12 +7,11 @@ def call(body) {
     body.delegate = config
     body()
 
-    echo env.HOGE
     stage ("Checkout Code") {
     	checkout scm
     }
 
     stage ("Testing") {
-    	echo APP_NAME
+    	echo config.APP_NAME
     }
 }
