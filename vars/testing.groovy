@@ -11,7 +11,9 @@ def call(body) {
     	checkout scm
     }
 
-    stage ("Testing") {
-    	echo config.APP_NAME
+    stage ("Testing ${config.APP_NAME}") {
+    	withDockerContainer(image: 'java8') {
+    		sh "gradle clean compileJava"
+    	}
     }
 }
